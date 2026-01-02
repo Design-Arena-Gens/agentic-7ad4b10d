@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  body {
+    color: rgb(226 232 240);
+    background: radial-gradient(120% 120% at 50% 10%, rgba(99, 102, 241, 0.2), transparent),
+      radial-gradient(100% 100% at 10% 60%, rgba(14, 165, 233, 0.12), transparent),
+      #020617;
+  }
+
+  ::selection {
+    background: rgba(99, 102, 241, 0.35);
+    color: rgb(226 232 240);
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: transparent;
+  }
+}
